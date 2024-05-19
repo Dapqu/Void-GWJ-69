@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://bh6gigilsid8b"]
+
+[ext_resource type="Texture2D" uid="uid://o5htvsc5f7dg" path="res://assets/enviroment/backgrounds/moon_background.png" id="1_wh53j"]
+[ext_resource type="PackedScene" uid="uid://dpwd44pj2m5kn" path="res://scenes/moon.tscn" id="2_53oug"]
+[ext_resource type="PackedScene" uid="uid://rgw8tg1yuy2e" path="res://scenes/saturn.tscn" id="3_pcj4h"]
+[ext_resource type="PackedScene" uid="uid://bbw6f5n0golrj" path="res://scenes/star.tscn" id="4_xn15b"]
+[ext_resource type="PackedScene" uid="uid://3lyu7nwcfvns" path="res://scenes/astoid.tscn" id="5_fqk7w"]
+[ext_resource type="PackedScene" uid="uid://dmyeg6ldx2orv" path="res://scenes/vignette.tscn" id="6_qi8sp"]
+
+[node name="OptionsMenu" type="CanvasLayer"]
+layer = 2
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_wh53j")
+offset = Vector2(640, 360)
+
+[node name="NewBackground" type="Sprite2D" parent="."]
+offset = Vector2(640, 360)
+
+[node name="BackButton_Moon" parent="." instance=ExtResource("2_53oug")]
+position = Vector2(173, 147)
+rotation = -0.0872665
+
+[node name="FullscreenToggleButton_Saturn" parent="." instance=ExtResource("3_pcj4h")]
+position = Vector2(483, 485)
+rotation = 1.21573
+scale = Vector2(2, 2)
+
+[node name="AudioMuteToggleButton_Star" parent="." instance=ExtResource("4_xn15b")]
+position = Vector2(713, 277)
+scale = Vector2(1.2, 1.2)
+
+[node name="Credit_Astroid" parent="." instance=ExtResource("5_fqk7w")]
+position = Vector2(1211, 656)
+
+[node name="Vignette" parent="." instance=ExtResource("6_qi8sp")]
+layer = 3

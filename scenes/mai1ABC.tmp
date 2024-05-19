@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://cc06ix1wjl2yk"]
+
+[ext_resource type="PackedScene" uid="uid://vp8xtauubawr" path="res://scenes/blackhole.tscn" id="2_yrlnb"]
+[ext_resource type="PackedScene" uid="uid://dpwd44pj2m5kn" path="res://scenes/moon.tscn" id="3_p0fs6"]
+[ext_resource type="Texture2D" uid="uid://c6l13j8aomemj" path="res://assets/enviroment/backgrounds/default_background.png" id="4_oif56"]
+[ext_resource type="PackedScene" uid="uid://bs2n3wrk85nfw" path="res://scenes/earth.tscn" id="4_pmdxo"]
+[ext_resource type="PackedScene" uid="uid://nu428hkfqw2j" path="res://scenes/galaxy_green.tscn" id="5_7guav"]
+[ext_resource type="PackedScene" uid="uid://dn24o5hfugi0h" path="res://scenes/level_1.tscn" id="6_1k2yv"]
+[ext_resource type="PackedScene" uid="uid://dmyeg6ldx2orv" path="res://scenes/vignette.tscn" id="6_iccvd"]
+
+[node name="MainMenu" type="CanvasLayer"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("4_oif56")
+offset = Vector2(640, 360)
+
+[node name="NewBackground" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset = Vector2(640, 360)
+
+[node name="QuitButton_Blackhole" parent="." instance=ExtResource("2_yrlnb")]
+position = Vector2(173, 147)
+
+[node name="OptionsButton_Moon" parent="." instance=ExtResource("3_p0fs6")]
+position = Vector2(635, 313)
+rotation = -0.0872665
+scale = Vector2(0.5, 0.5)
+
+[node name="EasterEggButton_Earth" parent="." instance=ExtResource("4_pmdxo")]
+position = Vector2(478, 408)
+rotation = -0.0872665
+scale = Vector2(1.5, 1.5)
+
+[node name="Level_1_GalaxyGreen" parent="." instance=ExtResource("5_7guav")]
+position = Vector2(876, 449)
+rotation = -0.223402
+scene = ExtResource("6_1k2yv")
+
+[node name="Vignette" parent="." instance=ExtResource("6_iccvd")]
+
+[node name="Title" type="MarginContainer" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 100
+
+[node name="Label" type="Label" parent="Title"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.635294, 0.65098, 0.752941, 1)
+theme_override_colors/font_shadow_color = Color(0.227451, 0.247059, 0.364706, 1)
+theme_override_colors/font_outline_color = Color(0.298039, 0.407843, 0.517647, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 80
+text = "TEST TITLE"

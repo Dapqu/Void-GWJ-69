@@ -1,0 +1,86 @@
+[gd_scene load_steps=11 format=3 uid="uid://dri3ukti50ik"]
+
+[ext_resource type="Shader" path="res://shaders/CollapsingScreen.gdshader" id="1_8kcot"]
+[ext_resource type="Script" path="res://scripts/CollapsingScreen.gd" id="1_ncclt"]
+
+[sub_resource type="Gradient" id="Gradient_rl8f0"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0.483607, 0.639344, 0.720617, 0.786885, 0.844262, 0.876686, 0.934426)
+colors = PackedColorArray(1, 0.460541, 0.976752, 1, 0.567249, 0.178223, 0.570313, 1, 0.501961, 0, 0.733333, 1, 0, 0.0401971, 0.140201, 1, 0.0580458, 0.0145972, 0.29028, 1, 0.435294, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_bncgj"]
+gradient = SubResource("Gradient_rl8f0")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_td1fn"]
+noise_type = 3
+fractal_octaves = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_v717d"]
+seamless = true
+noise = SubResource("FastNoiseLite_td1fn")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_87u6x"]
+resource_local_to_scene = true
+shader = ExtResource("1_8kcot")
+shader_parameter/percent = 0.05
+shader_parameter/feather_size = 0.0
+shader_parameter/pixel_size = 512.0
+shader_parameter/effect_tiling = Vector2(3, 7.4)
+shader_parameter/scroll_speed = Vector2(0.585, 1.73)
+shader_parameter/player_pos = Vector2(576, 235)
+shader_parameter/alpha_smoothstep = Vector2(0.245, 0.345)
+shader_parameter/noise = SubResource("NoiseTexture2D_v717d")
+shader_parameter/color_gradient = SubResource("GradientTexture1D_bncgj")
+
+[sub_resource type="Animation" id="Animation_ysj4j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/percent")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.05]
+}
+
+[sub_resource type="Animation" id="Animation_8jsn0"]
+resource_name = "new_animation"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/percent")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.05, 0.9]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xyhkf"]
+_data = {
+"RESET": SubResource("Animation_ysj4j"),
+"new_animation": SubResource("Animation_8jsn0")
+}
+
+[node name="CollapsingScreen" type="ColorRect"]
+material = SubResource("ShaderMaterial_87u6x")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ncclt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xyhkf")
+}
+autoplay = "new_animation"

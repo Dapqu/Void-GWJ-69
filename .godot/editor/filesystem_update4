@@ -1,0 +1,6 @@
+res://scenes/main_menu.tscn
+res://assets/ui/theme/theme.tres
+res://shaders/screen_transition.gdshader
+res://shaders/CollapsingScreen.gdshader
+res://scenes/level_4.tscn
+res://scripts/level_4.gd

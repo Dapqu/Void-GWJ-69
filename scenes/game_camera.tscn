@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4fsoih1745ej"]
+
+[ext_resource type="Script" path="res://scripts/game_camera.gd" id="1_0hybq"]
+
+[node name="GameCamera" type="Camera2D"]
+ignore_rotation = false
+zoom = Vector2(2, 2)
+position_smoothing_speed = 3.0
+rotation_smoothing_speed = 3.0
+script = ExtResource("1_0hybq")

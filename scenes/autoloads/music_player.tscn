@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba7m0b4vhsnsj"]
+
+[ext_resource type="AudioStream" uid="uid://buft1etij1ru1" path="res://audio/bgm/Breathless_9-10-23.wav" id="1_a0uvn"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_a0uvn")
+volume_db = -15.0
+autoplay = true

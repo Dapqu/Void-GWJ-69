@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dky6vyvqxali8"]
+
+[ext_resource type="Shader" path="res://shaders/motion_lines.gdshader" id="1_ud11b"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_obpib"]
+shader = ExtResource("1_ud11b")
+shader_parameter/speedScale = 16.0
+shader_parameter/clipPosition = 0.2
+
+[node name="MotionLines" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_obpib")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

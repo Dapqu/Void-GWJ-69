@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://4le0vqoe36o3"]
+
+[ext_resource type="Script" path="res://scripts/DarknessTimer.gd" id="1_wff4c"]
+[ext_resource type="Shader" path="res://shaders/screen_transition.gdshader" id="2_84oev"]
+[ext_resource type="Texture2D" uid="uid://cycohqij63uxh" path="res://assets/ui/screen_transition.png" id="3_2jb2d"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mi03o"]
+resource_local_to_scene = true
+shader = ExtResource("2_84oev")
+shader_parameter/transition_color = Color(0.227451, 0.372549, 0.423529, 1)
+shader_parameter/percent = 0.0
+shader_parameter/transition_texture = ExtResource("3_2jb2d")
+
+[node name="DarknessTimer" type="CanvasLayer"]
+layer = 5
+script = ExtResource("1_wff4c")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_mi03o")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(1280, 720)

@@ -1,0 +1,14 @@
+Camera2D
+VisibleOnScreenNotifier2D
+CanvasLayer
+AudioStreamPlayer
+Label
+Node
+Node2D
+Timer
+CollisionShape2D
+Area2D
+Sprite2D
+PointLight2D
+DirectionalLight2D
+ParallaxLayer

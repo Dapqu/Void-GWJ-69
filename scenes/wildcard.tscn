@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbgw68r1o0ano"]
+
+[ext_resource type="Shader" path="res://shaders/fake_3d_card.gdshader" id="1_4r1ux"]
+[ext_resource type="Texture2D" uid="uid://cfcj4qk6g734c" path="res://assets/ui/wildcards/cooldown.png" id="1_4xdwv"]
+[ext_resource type="Script" path="res://scripts/wildcard.gd" id="3_4jr73"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fa5wq"]
+resource_local_to_scene = true
+shader = ExtResource("1_4r1ux")
+shader_parameter/fov = 90.0
+shader_parameter/cull_back = true
+shader_parameter/y_rot = 0.0
+shader_parameter/x_rot = 0.0
+shader_parameter/inset = 0.0
+
+[node name="Wildcard" type="TextureRect"]
+material = SubResource("ShaderMaterial_fa5wq")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -504.0
+offset_right = 360.0
+offset_bottom = 504.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(360, 504)
+texture = ExtResource("1_4xdwv")
+script = ExtResource("3_4jr73")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

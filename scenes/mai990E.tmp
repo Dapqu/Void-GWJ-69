@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://cc06ix1wjl2yk"]
+
+[ext_resource type="Texture2D" uid="uid://caphqgev54ts5" path="res://assets/Enviroment/space_background_2.png" id="2_n1u8e"]
+[ext_resource type="PackedScene" uid="uid://vp8xtauubawr" path="res://scenes/blackhole.tscn" id="2_yrlnb"]
+[ext_resource type="PackedScene" uid="uid://dpwd44pj2m5kn" path="res://scenes/moon.tscn" id="3_p0fs6"]
+[ext_resource type="Texture2D" uid="uid://c6l13j8aomemj" path="res://assets/Enviroment/space_background.png" id="4_oif56"]
+[ext_resource type="PackedScene" uid="uid://bs2n3wrk85nfw" path="res://scenes/earth.tscn" id="4_pmdxo"]
+[ext_resource type="PackedScene" uid="uid://nu428hkfqw2j" path="res://scenes/galaxy_green.tscn" id="5_7guav"]
+
+[node name="MainMenu" type="CanvasLayer"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("4_oif56")
+offset = Vector2(640, 360)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_n1u8e")
+offset = Vector2(640, 360)
+
+[node name="Blackhole_QuitButton" parent="." instance=ExtResource("2_yrlnb")]
+position = Vector2(173, 147)
+
+[node name="Moon_OptionsButton" parent="." instance=ExtResource("3_p0fs6")]
+position = Vector2(635, 313)
+rotation = -0.0872665
+scale = Vector2(0.5, 0.5)
+
+[node name="Earth_EasterEggButton" parent="." instance=ExtResource("4_pmdxo")]
+position = Vector2(478, 408)
+rotation = -0.0872665
+scale = Vector2(1.5, 1.5)
+
+[node name="GalaxyGreen_Level1" parent="." instance=ExtResource("5_7guav")]
+position = Vector2(876, 449)
+rotation = -0.223402

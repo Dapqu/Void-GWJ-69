@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716079848
-export_presets.cfg::TextFile::-1::1716079156::0::1::::<><>::
+::res://::1716158865
+export_presets.cfg::TextFile::-1::1716157332::0::1::::<><>::
+README.md::TextFile::-1::1716091222::0::1::::<><>::
 ::res://assets/::1716077000
 ::res://assets/enemy/::1716076948
 idle_attack.png::CompressedTexture2D::426914729862406820::1715809280::1716076948::1::::<><>::
@@ -44,8 +45,8 @@ panel_ui.png::CompressedTexture2D::2622348718365450261::1715646383::1716077028::
 screen_transition.png::CompressedTexture2D::6462365761846670933::1715634342::1715643808::1::::<><>::
 ::res://assets/ui/font/::1715644075
 Mespix-Regular.otf::FontFile::4785984312307326149::1715643822::1715644075::1::::<><>::
-::res://assets/ui/theme/::1716078885
-theme.tres::Theme::7165039607828253883::1716078885::0::1::::<><>::uid://cagmpyrqtohjx::::res://assets/ui/font/Mespix-Regular.otf<>uid://bdmjx2rcx2xsn::::res://assets/ui/panel_ui.png
+::res://assets/ui/theme/::1716157253
+theme.tres::Theme::7165039607828253883::1716157253::0::1::::<><>::uid://cagmpyrqtohjx::::res://assets/ui/font/Mespix-Regular.otf<>uid://bdmjx2rcx2xsn::::res://assets/ui/panel_ui.png
 ::res://assets/ui/wildcards/::1716077064
 69-Void.png::CompressedTexture2D::1422811896239554642::1715650223::1715650223::1::::<><>::
 cooldown.png::CompressedTexture2D::5128513439282077452::1716077061::1716077064::1::::<><>::
@@ -61,7 +62,7 @@ Project_Void_Planet_Hover.wav::AudioStreamWAV::6212314691194635446::1715984874::
 Project_Void_Transition.wav::AudioStreamWAV::7616996071700192318::1715984874::1716077121::1::::<><>::
 Project_Void_Transition_Phet.wav::AudioStreamWAV::8457144496664900110::1715985798::1716077121::1::::<><>::
 Project_Void_Transition_Phew.wav::AudioStreamWAV::7592311103232136482::1715985798::1716077121::1::::<><>::
-::res://scenes/::1716078906
+::res://scenes/::1716157272
 astoid.tscn::PackedScene::1989490402696192616::1716077121::0::1::::<><>::res://scripts/astoid.gd<>uid://cae36tjo16vqs::::res://assets/enviroment/planets/astroid.png<>uid://o5htvsc5f7dg::::res://assets/enviroment/backgrounds/moon_background.png<>uid://bqnnud68qqq20::::res://audio/sfx/Project_Void_Menu_Hover_or_Select.wav<>uid://wqouhkcpw4hh::::res://audio/sfx/Project_Void_Menu_Hover_or_Select_B.wav
 blackhole.tscn::PackedScene::1506977115609810629::1716077121::0::1::::<><>::uid://47gf0mg4m2cc::::res://assets/enviroment/planets/blackhole.png<>res://scripts/blackhole.gd<>uid://cqmt4gyc71hw3::::res://assets/enviroment/backgrounds/blackhole_background.png<>uid://bqnnud68qqq20::::res://audio/sfx/Project_Void_Menu_Hover_or_Select.wav<>uid://wqouhkcpw4hh::::res://audio/sfx/Project_Void_Menu_Hover_or_Select_B.wav
 CollapsingScreen.tscn::PackedScene::246197757694801230::1716078722::0::1::::<><>::res://shaders/CollapsingScreen.gdshader<>res://scripts/CollapsingScreen.gd
@@ -74,12 +75,12 @@ game_camera.tscn::PackedScene::4433337377176494449::1716068606::0::1::::<><>::re
 level_1.tscn::PackedScene::8129242598406519113::1716075789::0::1::::<><>::uid://bakel30int4qs::::res://scenes/player.tscn<>res://scripts/level_1.gd<>uid://b4fsoih1745ej::::res://scenes/game_camera.tscn<>uid://8jflmunkmlqp::::res://assets/enviroment/tileset 1.png<>uid://dmyeg6ldx2orv::::res://scenes/vignette.tscn<>uid://dx8lnyb1q6wpm::::res://scenes/portal.tscn<>uid://bsky4atns51iy::::res://scenes/enemy.tscn
 level_2.tscn::PackedScene::2568137586655160704::1716078888::0::1::::<><>::res://scripts/level_2.gd<>uid://8jflmunkmlqp::::res://assets/enviroment/tileset 1.png<>uid://b4fsoih1745ej::::res://scenes/game_camera.tscn<>uid://bakel30int4qs::::res://scenes/player.tscn<>uid://dx8lnyb1q6wpm::::res://scenes/portal.tscn<>uid://dmyeg6ldx2orv::::res://scenes/vignette.tscn<>uid://bsky4atns51iy::::res://scenes/enemy.tscn<>uid://dri3ukti50ik::::res://scenes/CollapsingScreen.tscn<>res://shaders/CollapsingScreen.gdshader
 level_3.tscn::PackedScene::307293671689359268::1716078890::0::1::::<><>::res://scripts/level_3.gd<>uid://b4fsoih1745ej::::res://scenes/game_camera.tscn<>uid://8jflmunkmlqp::::res://assets/enviroment/tileset 1.png<>uid://bakel30int4qs::::res://scenes/player.tscn<>uid://dx8lnyb1q6wpm::::res://scenes/portal.tscn<>uid://dmyeg6ldx2orv::::res://scenes/vignette.tscn<>uid://bsky4atns51iy::::res://scenes/enemy.tscn<>uid://dri3ukti50ik::::res://scenes/CollapsingScreen.tscn<>res://shaders/CollapsingScreen.gdshader
-level_4.tscn::PackedScene::2317325243871498559::1716078906::0::1::::<><>::res://scripts/level_4.gd<>uid://b4fsoih1745ej::::res://scenes/game_camera.tscn<>uid://bsky4atns51iy::::res://scenes/enemy.tscn<>uid://8jflmunkmlqp::::res://assets/enviroment/tileset 1.png<>uid://bakel30int4qs::::res://scenes/player.tscn<>uid://dx8lnyb1q6wpm::::res://scenes/portal.tscn<>uid://dmyeg6ldx2orv::::res://scenes/vignette.tscn<>uid://dri3ukti50ik::::res://scenes/CollapsingScreen.tscn<>res://shaders/CollapsingScreen.gdshader
-main_menu.tscn::PackedScene::4966726260854799694::1716078369::0::1::::<><>::uid://vp8xtauubawr::::res://scenes/blackhole.tscn<>uid://dpwd44pj2m5kn::::res://scenes/moon.tscn<>uid://c6l13j8aomemj::::res://assets/enviroment/backgrounds/default_background.png<>uid://bs2n3wrk85nfw::::res://scenes/earth.tscn<>uid://nu428hkfqw2j::::res://scenes/galaxy_green.tscn<>uid://dn24o5hfugi0h::::res://scenes/level_1.tscn<>uid://csqm7sh8jljx2::::res://assets/enviroment/planets/galaxy_green.png<>uid://dmyeg6ldx2orv::::res://scenes/vignette.tscn<>uid://bcua36tru5nym::::res://scenes/level_2.tscn<>uid://c4vv07kewlsws::::res://assets/enviroment/planets/galaxy_red.png<>uid://k2yd8eqd6iad::::res://assets/enviroment/planets/galaxy_white.png<>uid://em4c1wcub7me::::res://scenes/level_3.tscn<>uid://bq1pbnhvv3gmb::::res://assets/enviroment/planets/galaxy_gold.png<>uid://8asajqlo3k8v::::res://scenes/level_4.tscn
+level_4.tscn::PackedScene::2317325243871498559::1716079871::0::1::::<><>::res://scripts/level_4.gd<>uid://b4fsoih1745ej::::res://scenes/game_camera.tscn<>uid://bsky4atns51iy::::res://scenes/enemy.tscn<>uid://8jflmunkmlqp::::res://assets/enviroment/tileset 1.png<>uid://bakel30int4qs::::res://scenes/player.tscn<>uid://dx8lnyb1q6wpm::::res://scenes/portal.tscn<>uid://dmyeg6ldx2orv::::res://scenes/vignette.tscn<>uid://dri3ukti50ik::::res://scenes/CollapsingScreen.tscn<>res://shaders/CollapsingScreen.gdshader
+main_menu.tscn::PackedScene::4966726260854799694::1716157254::0::1::::<><>::uid://vp8xtauubawr::::res://scenes/blackhole.tscn<>uid://dpwd44pj2m5kn::::res://scenes/moon.tscn<>uid://c6l13j8aomemj::::res://assets/enviroment/backgrounds/default_background.png<>uid://bs2n3wrk85nfw::::res://scenes/earth.tscn<>uid://nu428hkfqw2j::::res://scenes/galaxy_green.tscn<>uid://dn24o5hfugi0h::::res://scenes/level_1.tscn<>uid://csqm7sh8jljx2::::res://assets/enviroment/planets/galaxy_green.png<>uid://dmyeg6ldx2orv::::res://scenes/vignette.tscn<>uid://bcua36tru5nym::::res://scenes/level_2.tscn<>uid://c4vv07kewlsws::::res://assets/enviroment/planets/galaxy_red.png<>uid://k2yd8eqd6iad::::res://assets/enviroment/planets/galaxy_white.png<>uid://em4c1wcub7me::::res://scenes/level_3.tscn<>uid://bq1pbnhvv3gmb::::res://assets/enviroment/planets/galaxy_gold.png<>uid://8asajqlo3k8v::::res://scenes/level_4.tscn
 moon.tscn::PackedScene::8257746502035372361::1716077121::0::1::::<><>::uid://bemid87lvh5qr::::res://assets/enviroment/planets/moon.png<>res://scripts/moon.gd<>uid://o5htvsc5f7dg::::res://assets/enviroment/backgrounds/moon_background.png<>uid://c6l13j8aomemj::::res://assets/enviroment/backgrounds/default_background.png<>uid://bqnnud68qqq20::::res://audio/sfx/Project_Void_Menu_Hover_or_Select.wav<>uid://wqouhkcpw4hh::::res://audio/sfx/Project_Void_Menu_Hover_or_Select_B.wav
 motion_lines.tscn::PackedScene::7912616575763836557::1715634054::0::1::::<><>::res://shaders/motion_lines.gdshader
 options_menu.tscn::PackedScene::2942117215865717679::1715808767::0::1::::<><>::uid://o5htvsc5f7dg::::res://assets/enviroment/backgrounds/moon_background.png<>uid://dpwd44pj2m5kn::::res://scenes/moon.tscn<>uid://rgw8tg1yuy2e::::res://scenes/saturn.tscn<>uid://bbw6f5n0golrj::::res://scenes/star.tscn<>uid://3lyu7nwcfvns::::res://scenes/astoid.tscn<>uid://dmyeg6ldx2orv::::res://scenes/vignette.tscn
-pause_menu.tscn::PackedScene::1863404295830275295::1715808876::0::1::::<><>::uid://c6l13j8aomemj::::res://assets/enviroment/backgrounds/default_background.png<>res://scripts/pause_menu.gd
+pause_menu.tscn::PackedScene::1863404295830275295::1716157272::0::1::::<><>::uid://c6l13j8aomemj::::res://assets/enviroment/backgrounds/default_background.png<>res://scripts/pause_menu.gd
 player.tscn::PackedScene::2407328482593269582::1716078369::0::1::::<><>::res://scripts/player.gd<>uid://f1av1f6s1bna::::res://assets/player/mage/idle.png<>uid://kh6ww5dsnvnh::::res://assets/player/flamethrower/idle.png<>uid://hahbl0l1ecp2::::res://assets/player/mage/walk.png<>uid://8yuxq4fyijj8::::res://assets/player/flamethrower/walk.png<>uid://3acsxjuqv24m::::res://assets/player/mage/jump.png<>uid://curj6eeja7vni::::res://audio/sfx/Project_Void_Planet_Hover.wav<>uid://clqjgqukiwxsc::::res://assets/ui/marker_ui.png
 portal.tscn::PackedScene::8842422286188370010::1716076980::0::1::::<><>::uid://c28gwvlb8lpd::::res://assets/enviroment/portal/portal.png
 saturn.tscn::PackedScene::1206992321837320026::1716077121::0::1::::<><>::uid://byy4nhl2t8eb7::::res://assets/enviroment/planets/saturn.png<>res://scripts/saturn.gd<>uid://bh2j3d7bvk16f::::res://assets/enviroment/backgrounds/saturn_background.png<>uid://bqnnud68qqq20::::res://audio/sfx/Project_Void_Menu_Hover_or_Select.wav<>uid://wqouhkcpw4hh::::res://audio/sfx/Project_Void_Menu_Hover_or_Select_B.wav
@@ -89,7 +90,7 @@ wildcard.tscn::PackedScene::2470388688040648688::1715643815::0::1::::<><>::res:/
 ::res://scenes/autoloads/::1716077144
 music_player.tscn::PackedScene::2453254118870733441::1716077126::0::1::::<><>::uid://buft1etij1ru1::::res://audio/bgm/Breathless_9-10-23.wav
 screen_transition.tscn::PackedScene::6026230747369492335::1716077121::0::1::::<><>::res://shaders/screen_transition.gdshader<>res://scripts/autoloads/screen_transition.gd<>uid://cycohqij63uxh::::res://assets/ui/screen_transition.png<>uid://dsqx6088wh4xu::::res://audio/sfx/Project_Void_Transition_Phet.wav<>uid://dgf1iwltp8fhi::::res://audio/sfx/Project_Void_Transition_Phew.wav
-::res://scripts/::1716078723
+::res://scripts/::1716079874
 astoid.gd::GDScript::-1::1715985338::0::1::::<>AnimatedSprite2D<>::
 blackhole.gd::GDScript::-1::1715985347::0::1::::<>AnimatedSprite2D<>::
 CollapsingScreen.gd::GDScript::-1::1716078723::0::1::::<>Control<>::
@@ -101,7 +102,7 @@ game_camera.gd::GDScript::-1::1716068535::0::1::::<>Camera2D<>::
 level_1.gd::GDScript::-1::1716067464::0::1::::<>Node2D<>::
 level_2.gd::GDScript::-1::1716068636::0::1::::<>Node2D<>::
 level_3.gd::GDScript::-1::1716071196::0::1::::<>Node2D<>::
-level_4.gd::GDScript::-1::1716073714::0::1::::<>Node2D<>::
+level_4.gd::GDScript::-1::1716079874::0::1::::<>Node2D<>::
 moon.gd::GDScript::-1::1715985345::0::1::::<>AnimatedSprite2D<>::
 pause_menu.gd::GDScript::-1::1715804572::0::1::::<>CanvasLayer<>::
 player.gd::GDScript::-1::1716077747::0::1::::Player<>CharacterBody2D<>::
@@ -111,9 +112,9 @@ wildcard.gd::GDScript::-1::1715492174::0::1::::<>TextureRect<>::
 ::res://scripts/autoloads/::1716077095
 groups_utils.gd::GDScript::-1::1715656364::0::1::::<>Node<>::
 screen_transition.gd::GDScript::-1::1716060444::0::1::::<>CanvasLayer<>::
-::res://shaders/::1716079178
-CollapsingScreen.gdshader::Shader::-1::1716079178::0::1::::<><>::
+::res://shaders/::1716157346
+CollapsingScreen.gdshader::Shader::-1::1716157346::0::1::::<><>::
 fake_3d_card.gdshader::Shader::-1::1715634353::0::1::::<><>::
 motion_lines.gdshader::Shader::-1::1715634353::0::1::::<><>::
-screen_transition.gdshader::Shader::-1::1716079178::0::1::::<><>::
+screen_transition.gdshader::Shader::-1::1716157346::0::1::::<><>::
 vignette.gdshader::Shader::-1::1715633777::0::1::::<><>::
